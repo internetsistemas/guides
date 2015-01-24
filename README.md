@@ -4,10 +4,6 @@ The guides below provides ideas and patterns for various topics, programming lan
 
 ## Our guides
 
-* [Best Practices](/best-practices)
-* [Code Review](/code-review)
-* [Protocol](/protocol)
-  * [Git](/protocol/git)
 * [Style Guides](/style-guides)
 
 ## Contributing
