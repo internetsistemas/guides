@@ -192,11 +192,11 @@ Calculator.sum 1, 2
 
 ## Namming
 
-### Classe
+### Class
 
 * Use `CamelCase` format for names.
 
-### Methods
+### Method
 
 * `snake_case` format for name.
 * Use infinitive verbs.
@@ -227,7 +227,7 @@ def empty?
 end
 ```
 
-### Variables
+### Variable
 
 * `snake_case` format for name.
 * Avoid types in names.
@@ -240,7 +240,7 @@ people_array = Person.all
 people = Person.all
 ```
 
-### Constants
+### Constant
 
 * `SCREAMING_SNAKE_CASE` format for name.
 
