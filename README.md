@@ -14,11 +14,10 @@ Before contribute, please read the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## Credits
 
-Thank you, [contributors](https://github.com/internetsistemas/guides/graphs/contributors)!, Github, Plataformatec and Thoughtbot.
+Thank you, [contributors](https://github.com/internetsistemas/guides/graphs/contributors), Github, Plataformatec and Thoughtbot!
 
 Guides is maintained by [iS].
 
 ## License
 
-Guides is © 2014 [iS]. It is distributed under the [Creative Commons
-Attribution License](http://creativecommons.org/licenses/by/3.0/).
+Guides is © 2014 [iS]. It is distributed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/).
