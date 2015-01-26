@@ -1,4 +1,5 @@
 ## Rails Best-practices
 
 [Controllers](/best-practices/rails/controllers)
-[Enums](/best-practices/rails/Enums)
+
+[Enums](/best-practices/rails/enums)
