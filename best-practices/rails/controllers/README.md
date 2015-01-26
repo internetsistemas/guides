@@ -16,8 +16,6 @@
 
 * Use pattern of gem responders to implement flash messages
 
-#### Callbacks
-
 ###### Before action
 
 * Use private methods and before_action to help to mantain controllers clean
