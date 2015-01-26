@@ -5,6 +5,7 @@ The guides below provides ideas and patterns for various topics, programming lan
 ## Our guides
 
 * [Style Guides](/style-guides)
+* [Best Practices](/best-practices)
 
 ## Contributing
 
