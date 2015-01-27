@@ -13,3 +13,5 @@
 [Routes](/best-practices/rails/routes)
 
 [Locales(I18n)](/best-practices/rails/locales)
+
+[Models](/best-practices/rails/models)
