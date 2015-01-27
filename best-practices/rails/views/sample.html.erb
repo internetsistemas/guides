@@ -1,0 +1,10 @@
+<div class="row">
+  <%= render 'shared/page_title_big', :locals => { :title => t('.title') } %>
+</div>
+
+<div id="products" class="row">
+  <div class="image">
+    <!-- Helper to return an linked image -->
+    <%= link_image(@image.path, image_path(@image)) %>
+  </div>
+</div>
