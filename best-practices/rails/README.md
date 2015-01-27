@@ -3,3 +3,5 @@
 [Controllers](/best-practices/rails/controllers)
 
 [Enums](/best-practices/rails/enums)
+
+[Migrations](/best-practices/rails/migrations)
