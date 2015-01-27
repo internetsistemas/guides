@@ -25,3 +25,5 @@ When the db/migrations has too many files, is a good pattern consolidate all mig
 ###### Frequently fix db issues
 
 * Use (plentz/lol_dba)[https://github.com/plentz/lol_dba] to frequently fix index and other database issues.
+
+* Use (jenseng/immigrant) to frequently add missing foreign keys of association tables.
