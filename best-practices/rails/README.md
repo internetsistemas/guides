@@ -7,3 +7,5 @@
 [Migrations](/best-practices/rails/migrations)
 
 [Views](/best-practices/rails/views)
+
+[Helpers](/best-practices/rails/helpers)
