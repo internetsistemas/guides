@@ -9,3 +9,6 @@
 [Views](/best-practices/rails/views)
 
 [Helpers](/best-practices/rails/helpers)
+
+[Routes](/best-practices/rails/routes)
+
