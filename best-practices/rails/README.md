@@ -15,3 +15,6 @@
 [Locales(I18n)](/best-practices/rails/locales)
 
 [Models](/best-practices/rails/models)
+
+[Rspec Rails](/best-practices/rails/rspec)
+
