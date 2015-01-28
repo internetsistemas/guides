@@ -18,3 +18,4 @@
 
 [Rspec Rails](/best-practices/rails/rspec)
 
+[Factories](/best-practices/rails/factories)
