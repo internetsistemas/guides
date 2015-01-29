@@ -15,7 +15,7 @@ Before contribute, please read the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## Credits
 
-Thank you, [contributors](https://github.com/internetsistemas/guides/graphs/contributors), Github, Plataformatec and Thoughtbot!
+Thank you, [contributors](https://github.com/internetsistemas/guides/graphs/contributors), [Github](https://github.com/styleguide), [Plataformatec](http://guidelines.plataformatec.com.br) and [Thoughtbot](https://github.com/thoughtbot/guides)!
 
 Guides is maintained by [iS].
 
