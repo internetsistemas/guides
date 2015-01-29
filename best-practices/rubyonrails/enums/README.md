@@ -1,25 +1,21 @@
-## Ruby on Rails Enums (EnumerateIt)
+# Ruby on Rails Enums
 
-###### Why use a gem?
+Ruby on Rails 4.0+ implements native enums support, but it has limitations:
 
-* Multiple fields with same enum
+* Hard to localize.
+* Doesn't support multiple atributes with same enum.
+* DRY (we need to declare in every model).
 
-* Multiples models can follow one enum (DRY)
+So, we're using the [EnumerateIt](https://github.com/cassiomarques/enumerate_it). And it implements:
 
-* Magic powers
+* Localize easily.
+* Prefix: Support the same enum in multiple atributes.
+* Select values on `select_tag`: `AccountStatus.to_a # => [['Inactive', 0], ['Active', 1]]`
+* Create scopes and helpers automatically.
+* Implements Magic Powers.
 
-###### Inactive and Active
+Nothing is perfect:
 
 * Be carefuly when you are creating status. 'inactive' and similar status should be 0, others status, you can select other number.
-
-###### Translations
-
 * Gem find the correct translations at: enumerations.%{class_name}.%{value}
-
-###### Select values on select_tag
-
-* AccountStatus.to_a # => [['Inactive', 0], ['Active', 1]]
-
-###### Others reactions
-
-* Always you can found more infos at [cassiomarques/enumerate_it](https://github.com/cassiomarques/enumerate_it)
+* Only assigns by enumerator: `comment.status = CommentStatus::DRAFT`

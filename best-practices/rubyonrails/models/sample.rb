@@ -1,6 +1,9 @@
-class product < ActiveRecord::Base
+# app/models/product.rb
+class Product < ActiveRecord::Base
   belongs_to :supplier
-  validates :supplier, presence: true
+
+  validates :supplier, presence: true, associated: true
+  validates :quantity, presence: true
 
   def self.canceled
     where(status: :canceled)
@@ -15,23 +18,28 @@ class product < ActiveRecord::Base
   end
 end
 
-
+# spec/models/product_spec.rb
 RSpec.describe Product, :type => :model do
   context 'Associations' do
-    it { should belong_to(:supplier) }
+    it { is_expected.to belong_to(:supplier) }
   end
 
   context 'DB validations' do
-    it { should validate_presence_of(:quantity) }
+    it { is_expected.to validate_presence_of(:supplier) }
+    it { is_expected.to validate_presence_of(:quantity) }
   end
 
   context 'Attributes' do
-    subject { build :stock }
-    it { should respond_to(:product) }
+    it { is_expected.to have_db_column(:quantity) }
+  end
+
+  context 'Indexes' do
+    it { is_expected.to have_db_index(:supplier) }
   end
 
   describe '.class_method' do
     let!(:products) {...}
+
     it 'awesome test' do
       expect(Product.canceled).to eq([products])
     end
@@ -39,6 +47,7 @@ RSpec.describe Product, :type => :model do
 
   describe '#instance_method' do
     let(:product) {...}
+
     it 'awesome test name' do
       expect(product.status).to eq(:canceled)
     end

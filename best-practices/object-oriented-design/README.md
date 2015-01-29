@@ -9,4 +9,4 @@
 * Prefer small classes with a single, well-defined responsibility. When a
   class exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask](http://robots.thoughtbot.com/post/27572137956/tell-dont-ask).
-* [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
+* [SOLID principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)

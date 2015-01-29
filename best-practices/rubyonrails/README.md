@@ -1,21 +1,24 @@
-## Rails Best-practices
+# Ruby on Rails Best Practices
 
-[Controllers](/best-practices/rubyonrails/controllers)
+## Controller and Routing
 
-[Enums](/best-practices/rubyonrails/enums)
+* [Controllers](/best-practices/rubyonrails/controllers)
+* [Routes](/best-practices/rubyonrails/routes)
 
-[Migrations](/best-practices/rubyonrails/migrations)
 
-[Views](/best-practices/rubyonrails/views)
+## Presentation
 
-[Helpers](/best-practices/rubyonrails/helpers)
+* [Views](/best-practices/rubyonrails/views)
+* [Locales (I18n)](/best-practices/rubyonrails/locales)
+* [Helpers](/best-practices/rubyonrails/helpers)
 
-[Routes](/best-practices/rubyonrails/routes)
+## Data Store
 
-[Locales(I18n)](/best-practices/rubyonrails/locales)
+* [Enums](/best-practices/rubyonrails/enums)
+* [Migrations](/best-practices/rubyonrails/migrations)
+* [Models](/best-practices/rubyonrails/models)
+* [Factories](/best-practices/rubyonrails/factories)
 
-[Models](/best-practices/rubyonrails/models)
+## Testing
 
-[Rspec Rails](/best-practices/rubyonrails/rspec)
-
-[Factories](/best-practices/rubyonrails/factories)
+* [RSpec Rails](/best-practices/rubyonrails/rspec)
