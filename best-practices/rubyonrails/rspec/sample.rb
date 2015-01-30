@@ -1,4 +1,3 @@
-#
 # Test With controller spec and rendering views
 #
 RSpec.describe ProductsController, :type => :controller do
@@ -16,7 +15,6 @@ RSpec.describe ProductsController, :type => :controller do
   end
 end
 
-#
 # Test With request spec and testing body response
 #
 RSpec.describe ProductsController, :type => :request do
@@ -34,7 +32,6 @@ RSpec.describe ProductsController, :type => :request do
   end
 end
 
-#
 # Example with Capybara + RSpec
 #
 describe "the signin process", :type => :feature do
