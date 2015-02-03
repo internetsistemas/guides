@@ -3,7 +3,6 @@
 ###### Rspec and Test::Unit
 
 * Both are great!
-
 * [@tenderlove comparisson](http://tenderlovemaking.com/2015/01/23/my-experience-with-minitest-and-rspec.html)
 
 
