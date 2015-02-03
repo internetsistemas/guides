@@ -21,5 +21,5 @@ To create a model and rename existing column type, create two migrations, one fo
 
 ## Frequently fix DB issues
 
-* Use (plentz/lol_dba)[https://github.com/plentz/lol_dba] to frequently fix index and other database issues.
-* Use (jenseng/immigrant) to frequently add missing foreign keys of association tables.
+* Use [plentz/lol_dba](https://github.com/plentz/lol_dba) to frequently fix index and other database issues.
+* Use [jenseng/immigrant](https://github.com/jenseng/immigrant) to frequently add missing foreign keys of association tables.
