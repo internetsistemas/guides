@@ -1,6 +1,6 @@
 # app/models/finance/admin.rb
 class Finance::Admin < ActiveRecord::Base
-  validate :name, presence: true
+  validates :name, presence: true
 end
 
 # Files in config/locales
