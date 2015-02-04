@@ -20,7 +20,7 @@ class ApprovalCommentsController < ApplicationController
 end
 ```
 
-And, configure routes to `ApprovalCommentsController` be nested of `CommentsController`. For details see the [Ruby on Rails Guides](http://guides.rubyonrails.org/routing.html):
+And, configure routes to `ApprovalCommentsController` be nested of `CommentsController`. For details see the [Ruby on Rails Guides](http://guides.rubyonrails.org/routing.html).
 
 
 ## Keep clear and simple
