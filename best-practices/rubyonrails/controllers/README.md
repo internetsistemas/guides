@@ -25,7 +25,7 @@ And, configure routes to `ApprovalCommentsController` be nested of `CommentsCont
 
 ## Keep clear and simple
 
-* Use responders [plataformatec/responders](https://github.com/plataformatec/responders) to dry up your Rails app (3.2+).
+* Use [plataformatec/responders](https://github.com/plataformatec/responders) gem to dry up your Rails app (3.2+).
 * Set `respond_to` in the `ApplicationController`.
 * Use `respond_with` in actions.
 * Set the flash messages in the Flash Responder's. For details see [Flash Responder Manual](https://github.com/plataformatec/responders#flashresponder).
