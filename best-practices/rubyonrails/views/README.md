@@ -12,4 +12,4 @@
 * Use `_url` suffixes for named routes in mailer views and redirects. Use `_path` suffixes for named routes everywhere else.
 * Put application-wide partials in the `app/views/application` directory.
 * Use the default `render 'partial'` syntax over `render partial: 'partial'`.
-* Use `link_to` for GET requests, and button_to for other HTTP verbs.
+* Use `link_to` for GET requests, and `button_to` for other HTTP verbs.

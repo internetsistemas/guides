@@ -16,6 +16,6 @@ So, we're using the [EnumerateIt](https://github.com/cassiomarques/enumerate_it)
 
 Nothing is perfect:
 
-* Be carefuly when you are creating status. 'inactive' and similar status should be 0, others status, you can select other number.
-* Gem find the correct translations at: enumerations.%{class_name}.%{value}
+* Be carefuly when you are creating status. `'inactive'` and similar status should be 0, others status, you can select other number.
+* Gem find the correct translations at: `enumerations.%{class_name}.%{value}`
 * Only assigns by enumerator: `comment.status = CommentStatus::DRAFT`

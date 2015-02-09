@@ -2,7 +2,7 @@
 
 ## Validations
 
-* Prefeer use of hash validations, like `validates :name, presence: true`, for presence, inclusion, etc.
+* Prefer use of hash validations, like `validates :name, presence: true`, for presence, inclusion, etc.
 * When use custom validation, create a class in `app/validations` with custom validation and call `validates_with` in model. [Example](http://apidock.com/rails/ActiveModel/Validations/ClassMethods/validates_with)
 * Validate object under the foreign_key
 

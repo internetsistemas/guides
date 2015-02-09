@@ -1,6 +1,7 @@
 # app/models/finance/admin.rb
 class Finance::Admin < ActiveRecord::Base
-  validate :name, presence: true
+  validates :name, presence: true
+  validates :full_name, presence: true
 end
 
 # Files in config/locales
@@ -25,4 +26,5 @@ en:
     attributes:
       finance:
         admin:
-          name: "Full name"
+          name: Name
+          full_name: "Full Name"
