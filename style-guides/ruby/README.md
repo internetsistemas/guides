@@ -377,7 +377,7 @@ rescue SomeError => e
 end
 ```
 
-* If you're defining a class that doesn't have any methods, do it in a single-line. This happens a lot when defining exceptions.
+* If you're defining a class that doesn't have any methods, or empty methods, do it in a single-line. This happens a lot when defining exceptions.
 
 ```ruby
 # Instead of this...
@@ -387,10 +387,21 @@ end
 class MyError < StandardError
 end
 
+class SomeRailsController
+  # other methods...
+  
+  def show
+  end
+end
+
 # ...you should do this.
 class MyClass; end
 
 class MyError < StandardError; end
+
+class SomeRailsController
+  def show; end
+end
 ```
 
 * Use `{...}` for single-line blocks instead of `do...end`. For multi-line blocks use `do...end`.
