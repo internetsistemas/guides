@@ -9,4 +9,7 @@
 * Prefer small classes with a single, well-defined responsibility. When a
   class exceeds 100 lines, it may be doing too many things.
 * [Tell, don't ask](http://robots.thoughtbot.com/post/27572137956/tell-dont-ask).
-* [SOLID principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+* [SOLID principles - Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
+* [SOLID principles - Ruby examples 1](http://robots.thoughtbot.com/back-to-basics-solid)
+* [SOLID principles - Ruby examples 2](https://blog.groupbuddies.com/posts/19-solid-principles-in-ruby)
+* [Sandi Metz Rules](http://robots.thoughtbot.com/sandi-metz-rules-for-developers)
