@@ -1,8 +1,11 @@
 # app/models/product.rb
 class Product < ActiveRecord::Base
+  has_many :reviews
+  
   belongs_to :supplier
 
   validates :supplier, presence: true, associated: true
+  
   validates :quantity, presence: true
 
   def self.canceled
@@ -21,6 +24,8 @@ end
 # spec/models/product_spec.rb
 RSpec.describe Product, :type => :model do
   context 'Associations' do
+    it { is_expected.to have_many(:reviews) }
+    
     it { is_expected.to belong_to(:supplier) }
   end
 
