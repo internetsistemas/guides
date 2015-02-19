@@ -1,12 +1,12 @@
-## RSpec
+# RSpec Best Practices
 
-###### Rspec and Test::Unit
+## Rspec or Test::Unit?
 
 * Both are great!
 * [@tenderlove comparisson](http://tenderlovemaking.com/2015/01/23/my-experience-with-minitest-and-rspec.html)
 
 
-###### Tips with RSpec
+## Our tips
 
 * Don't prefix `it` block descriptions with should. Use Imperative mood instead.
 * Use `subject` blocks to define objects for use in one-line specs.
