@@ -22,6 +22,17 @@ end
 
 And, configure routes to `ApprovalCommentsController` be nested of `CommentsController`. For details see the [Ruby on Rails Guides](http://guides.rubyonrails.org/routing.html).
 
+If it won't be possible for some reason, write a good methods's documentation for these actions and use `member` or `collection` in the `routes.rb`:
+
+```ruby
+# ...You should do this.
+resources :comments, only: [:index, :show] do
+  member do
+    put :approve
+    put :disapprove
+  end
+end
+```
 
 ## Keep clear and simple
 
