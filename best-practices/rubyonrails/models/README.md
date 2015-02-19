@@ -6,6 +6,7 @@
 * `has_many` associations come first, followed by `belongs_to` associations. Any other kind of association comes before `has_many`. Break line between kinds of associations, but not between associations of the same kind.
 * Sentences like `accepts_nested_attributes_for` come after associations.
 * Validate associations first and attributes last. Break line between associations and attributes validations, but not between validations of the same kind. Enumerations are validated on theirs declarations.
+* Always use `datetime` for date attributes, even if in the MER it's defined as `DATE`.
 
 ## Validations
 
