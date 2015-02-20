@@ -7,20 +7,20 @@ Ruby on Rails supports RESTful and creating other actions that are outside the s
 ```ruby
 # Instead of this...
 class CommentsController < ApplicationController
-  def approval
-    @comment.approval!
+  def approve
+    @comment.approve!
   end
 end
 
 # ...You should do this.
-class ApprovalCommentsController < ApplicationController
+class ApproveCommentsController < ApplicationController
   def update
-    @comment.approval!
+    @comment.approve!
   end
 end
 ```
 
-And, configure routes to `ApprovalCommentsController` be nested of `CommentsController`. For details see the [Ruby on Rails Guides](http://guides.rubyonrails.org/routing.html).
+And, configure routes to `ApproveCommentsController` be nested of `CommentsController`. For details see the [Ruby on Rails Guides](http://guides.rubyonrails.org/routing.html).
 
 If it won't be possible for some reason, write a good methods's documentation for these actions and use `member` or `collection` in the `routes.rb`:
 
