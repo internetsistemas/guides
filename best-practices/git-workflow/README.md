@@ -36,4 +36,4 @@ $ git fetch origin feature/old-awesome-feature
 $ git merge old-awesome-feature
 ```
 
-*ERRORS*: You can get errors, when you don't have the old branch updated, so pay attention!
+**ERRORS**: You can get errors, when you don't have the old branch updated, so pay attention!
