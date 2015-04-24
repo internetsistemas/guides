@@ -36,4 +36,14 @@ $ git fetch origin feature/old-awesome-feature
 $ git merge old-awesome-feature
 ```
 
+### What will happen?
+
+Now, in your workflow you'll notice cool things!
+
+- All commits about the `old-awesome-feature` will be desappear when it be merged with master as well.
+- And all of old files too!
+- Any reference stay in your new branch.
+- Code Review facilitated!
+
+
 **ERRORS**: You can get errors, when you don't have the old branch updated, so pay attention!
