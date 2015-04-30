@@ -17,3 +17,4 @@ A guide for programming well.
 * [Object Oriented Design](/best-practices/object-oriented-design)
 * [Ruby on Rails](/best-practices/rubyonrails)
 * [RSpec](/best-practices/rspec)
+* [Git Workflow](/best-practices/git-workflow)
