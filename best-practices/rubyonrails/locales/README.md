@@ -140,7 +140,7 @@ And, the most important: When you're working in a Gem/Rails Engine **never** for
 
   ```yml
   pt-BR:
-    views:
-      project_name:
+    project_name:
+      views:
         # ...
   ```
