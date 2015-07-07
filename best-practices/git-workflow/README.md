@@ -31,7 +31,7 @@ $ git fetch origin
 // create your branch normally.
 $ git checkout -b feature/awesome
 // now you need to reference old branch inside your new branch.
-$ git fetch origin feature/old-awesome-feature
+$ git fetch origin feature/old-awesome-feature:feature/old-awesome-feature
 // and merge with your new branch.
 $ git merge old-awesome-feature
 ```
