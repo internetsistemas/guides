@@ -42,3 +42,5 @@ end
 * Set the flash messages in the Flash Responder's. For details see [Flash Responder Manual](https://github.com/plataformatec/responders#flashresponder).
 * Use private methods and `before_action` to help to mantain controllers clean
 * Use before filter to ensure access of users, or similar.
+* Use the `:show` action only if you need to show some important information that does not fit in the `index`. Or if you need something more complex to be displayed.
+* Escape from actions `show` that show the same thing as the `:index`.
