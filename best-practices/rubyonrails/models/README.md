@@ -3,7 +3,7 @@
 ## Coding Style and Conventions
 
 * The following order is suggested: associations, validations, enumerations, scopes, class and object methods. Everything in alphabetical order.
-* `has_many` associations come first, followed by `belongs_to` associations. Any other kind of association comes before `has_many`. Break line between kinds of associations, but not between associations of the same kind.
+* `belongs_to` associations come first, followed by `has_many`associations. Any other kind of association comes after `has_many`. Break line between kinds of associations, but not between associations of the same kind.
 * Sentences like `accepts_nested_attributes_for` come after associations.
 * Validate associations first and attributes last. Break line between associations and attributes validations, but not between validations of the same kind. Enumerations are validated on theirs declarations.
 * Always use `datetime` for date attributes, even if in the MER it's defined as `DATE`.
