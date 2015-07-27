@@ -4,14 +4,14 @@
 
 * Don't use direct association in FactoryGirl.
 * Prefer create structure of database on test to make the visualization more clear.
-* Declare `belongs_to` associations at the end of factory and with the most simpliest form:
+* Declare `belongs_to` associations at the end of factory and the 'old school' way:
   
   ```ruby
   factory :qualified_product do
     name { Forgery('lorem_ipsum').words 3 }
     
-    supplier
-    product
+    association :supplier, factory: :supplier
+    association :product, factory: :product
   end
   
   # When the attribute does not match the model name, you'll have to declare like this:
