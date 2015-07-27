@@ -8,6 +8,12 @@ FactoryGirl.define do
       post
     end
   end
+  
+  factory :invalid_comment do
+    author nil
+    body nil
+    approved_at nil
+  end
 
   factory :post do
     title 'New post'
