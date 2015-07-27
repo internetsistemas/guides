@@ -3,8 +3,13 @@
 This guide provides a little introduction to a good way about how to use the Git workflow in Pull Requests and Branchs or somebody else.
 
 ## Our use cases:
+ 
+ * Starting the development of a new feature (kinds of merge old code to new feature)
+ * Commiting and pull requests.
 
-### Without needing anything
+### Starting the development
+
+#### Without needing anything
 
 Suppose if you want to start a new awesome feature and all of you need are in `master` branch, just start!
 
@@ -21,7 +26,7 @@ $ git checkout -b feature/awesome
 // happy coding!
 ```
 
-### Need of previous branches of things 
+#### Need of previous branches of things 
 
 In other words, when you need some classes for eg. But it be in other branches you'll to get the "old" code before start.
 
@@ -36,7 +41,7 @@ $ git fetch origin feature/old-awesome-feature:feature/old-awesome-feature
 $ git merge old-awesome-feature
 ```
 
-### What will happen?
+#### What will happen?
 
 Now, in your workflow you'll notice cool things!
 
@@ -47,3 +52,28 @@ Now, in your workflow you'll notice cool things!
 
 
 **ERRORS**: You can get errors, when you don't have the old branch updated, so pay attention!
+
+### Commits and Pull Requests
+
+Generally we use micro commits as the default kind.
+
+#### Naming things
+
+##### Branches:
+
+When you will develop a new feature use:
+
+```
+feature/sprint-02-story-10
+```
+But when you are creating a new bug fix for anything use:
+```
+bug-fix/sprint-02-story-10
+```
+
+** If is done without a story included use without the `-story-10`.
+
+##### Pull Requests:
+
+- When my awesome feature is a "create a model called PaymentForm" will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
+-  When my awesome feature is a "create a job called CheckSomethingJob" will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomethingJob**
