@@ -75,7 +75,9 @@ bug-fix/sprint-02-story-10
 
 ##### Pull Requests:
 
-- When my awesome job is "create a new model called PaymentForm" will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
--  When my awesome job is "create a new job called CheckSomethingJob" will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomethingJob**
--  When my awesome job is "fix a bug called Issue #1234" will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10**
--  When my awesome job is "fix a bug called remove rubocop offences" will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
+*When my awesome job is...*
+
+- *create a new model called `PaymentForm`* will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
+- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomethingJob**
+- *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10**
+- *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
