@@ -81,3 +81,9 @@ bug-fix/sprint-02-story-10
 - *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomethingJob**
 - *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10**
 - *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
+
+##### Master Comment at Pull Request:
+
+The GitHub interface provides a master comment bellow the title of your pull request, there you can provide some explanations about your changes, but the most important thing is provide to code reviewer a way to do what you need to do, in other words, provide a link used by your project management added to it like:
+
+*Pull request related with:* [https://trello.com/c/bCd4/something](https://trello.com/c/bCd4/something)
