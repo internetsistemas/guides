@@ -85,6 +85,7 @@ bug-fix/sprint-02-story-10
 - *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
 
 \*¹ Add the *[ModuleName]* if your project works with this kind of organization.
+
 \*² Ommit the name of thing that you will create, like Controller and Jobs, because it will be in declaration of PR.
 
 ##### Master Comment at Pull Request:
