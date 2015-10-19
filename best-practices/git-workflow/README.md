@@ -78,11 +78,14 @@ bug-fix/sprint-02-story-10
 *When my awesome job is...*
 
 - *create a new model called `PaymentForm`* will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
-- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomethingJob**
+- *create a new controller and views for `Place` model* will turn **Feature/Controller: Sprint 02 - Story 10 / Places** *²
+- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomething** *²
+- *create a new service called `SupplierService`* will turn **Feature/Service: Sprint 02 - Story 10 / Supplier** *²
 - *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10 [Module Name]** *¹
 - *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
 
 \*¹ Add the *[ModuleName]* if your project works with this kind of organization.
+\*² Ommit the name of thing that you will create, like Controller and Jobs, because it will be in declaration of PR.
 
 ##### Master Comment at Pull Request:
 
