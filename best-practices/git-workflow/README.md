@@ -67,8 +67,12 @@ When you will develop a new feature use:
 feature/sprint-02-story-10
 ```
 But when you are creating a new bug fix for anything use:
-```
-bug-fix/sprint-02-story-10
+```shell
+# without issue related:  
+bug-fix/sprint-02-story-10  
+
+# with a issue #123 related:
+bug-fix/sprint-02-issue-123
 ```
 
 ** If is done without a story included use without the `-story-10`.
