@@ -57,55 +57,51 @@ Inside languages directories we use the following structure:
 
     ```yml
     pt-BR:
-      views:
-        common:
-          add: Adicionar
-          cancel: Cancelar
-          delete: Excluir
+      common:
+        add: Adicionar
+        cancel: Cancelar
+        delete: Excluir
     ```
 
   * For project branch and infos:
 
     ```yml
     pt-BR:
-      views:
-        project:
-          name: Meu Projeto Legal!
+      project:
+        name: Meu Projeto Legal!
     ```
 
   * For common sections in the project like toolbar, etc:
 
     ```yml
     pt-BR:
-      views:
-        toolbar:
-          my_account: Minha Conta
-          logout: Sair
+      toolbar:
+        my_account: Minha Conta
+        logout: Sair
     ```
 
   * Controllers, for example `ClientsController`:
 
     ```yml
     pt-BR:
-      views:
-        clients:
-          index:
-            title: Cadastro de Clientes
-            grid:
-              # grid locales
+      clients:
+        index:
+          title: Cadastro de Clientes
+          grid:
+            # grid locales
 
-          show:
-            title: '%{name}'
+        show:
+          title: '%{name}'
 
-          new:
-            title: Adicionar Novo Cliente
-            form:
-              # form locales, but prefer SimpleForm's locales
+        new:
+          title: Adicionar Novo Cliente
+          form:
+            # form locales, but prefer SimpleForm's locales
 
-          edit:
-            title: 'Editar %{name}'
-            form:
-              # form locales, but prefer SimpleForm's locales
+        edit:
+          title: 'Editar %{name}'
+          form:
+            # form locales, but prefer SimpleForm's locales
     ```
 
 And, the most important: When you're working in a Gem/Rails Engine **never** forget to add the namespaces:
@@ -141,6 +137,28 @@ And, the most important: When you're working in a Gem/Rails Engine **never** for
   ```yml
   pt-BR:
     project_name:
-      views:
-        # ...
+       # ...
   ```
+
+
+### Implementation:
+
+**app/views/clients/new.html.slim**  
+
+**and our implementation will be:**
+```slim
+.content.new-client
+  .header
+    .row
+      .large-12.columns
+        h3.title = t '.title'
+```
+
+**instead of:**  
+```slim
+.content.new-client
+  .header
+    .row
+      .large-12.columns
+        h3.title = t 'views.clients.new.title'
+```
