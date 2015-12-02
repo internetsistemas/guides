@@ -82,10 +82,10 @@ bug-fix/sprint-02-issue-123
 *When my awesome job is...*
 
 - *create a new model called `PaymentForm`* will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
-- *create a new controller and views for `Place` model* will turn **Feature/Controller: Sprint 02 - Story 10 / Places** *²
-- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomething** *²
-- *create a new service called `SupplierService`* will turn **Feature/Service: Sprint 02 - Story 10 / Supplier** *²
-- *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10 [Module Name]** *¹
+- *create a new controller and views for `Place` model* will turn **Feature/Controller: Sprint 02 - Story 10 / [Module Name] Places** *²
+- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / [Module Name] CheckSomething** *²
+- *create a new service called `SupplierService`* will turn **Feature/Service: Sprint 02 - Story 10 / [Module Name] Supplier** *²
+- *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10 / [Module Name]** *¹
 - *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
 
 \*¹ Add the *[ModuleName]* if your project works with this kind of organization.  
