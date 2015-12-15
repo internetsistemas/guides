@@ -8,7 +8,7 @@
   
   ```ruby
   factory :qualified_product do
-    name { Forgery('lorem_ipsum').words 3 }
+    name { Forgery(:lorem_ipsum).words 3 }
     
     association :supplier, factory: :supplier
     association :product, factory: :product
@@ -29,16 +29,16 @@
  
 ### `Forgery` coding style and conventions
 
- * Use `Forgery('basic').text` for string attributes that does not match any of the out-of-box forgeries. Some examples: `bank_account`, `passport_number`, `cpf`, ... Custom forgeries should be created for these kind of attributes.
-  * Use `Forgery('date').date` for datetime attributes.
-  * Use `Forgery('monetary').money` for decimal attributes.
-  * Use `Forgery('basic').number` for integer attributes.
-  * Use `Forgery('lorem_ipsum').text` for text attributes.
+ * Use `Forgery(:basic).text` for string attributes that does not match any of the out-of-box forgeries. Some examples: `bank_account`, `passport_number`, `cpf`, ... Custom forgeries should be created for these kind of attributes.
+  * Use `Forgery(:date).date` for datetime attributes.
+  * Use `Forgery(:monetary).money` for decimal attributes.
+  * Use `Forgery(:basic).number` for integer attributes.
+  * Use `Forgery(:lorem_ipsum).text` for text attributes.
   * Use `sequence` for unique attributes.
   * Use `MyEnum.list.sample` for enums.
   
 ##### Most exactly examples:
-  * `Forgery('name').first_name` for product's name attribute.
-  * For a `background_color` attribute, use `Forgery('basic').hex_color` instead of `Forgery('basic').text`.
+  * `Forgery(:name).first_name` for product's name attribute.
+  * For a `background_color` attribute, use `Forgery(:basic).hex_color` instead of `Forgery(:basic).text`.
 
 __Warning! FactoryGirl is a highway to hell if not follow this three simple rules!__
