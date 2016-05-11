@@ -22,7 +22,7 @@ $ git checkout master
 $ git pull origin master 
 
 // now, enter in your branch
-$ git checkout -b feature/awesome
+$ git checkout -b story-idx
 // happy coding!
 ```
 
@@ -34,11 +34,11 @@ In other words, when you need some classes for eg. But it be in other branches y
 // update your branches.
 $ git fetch origin
 // create your branch normally.
-$ git checkout -b feature/awesome
+$ git checkout -b story-new-id
 // now you need to reference old branch inside your new branch.
-$ git fetch origin feature/old-awesome-feature:feature/old-awesome-feature
+$ git fetch origin story-id:story-id
 // and merge with your new branch.
-$ git merge old-awesome-feature
+$ git merge story-id
 ```
 
 #### What will happen?
@@ -61,22 +61,12 @@ Generally we use micro commits as the default kind.
 
 ##### Branches:
 
-When you will develop a new feature use:
+When you will develop a new feature or issue use:
 
+```console
+// The `id` will be the id placed in the url!
+story-id
 ```
-feature/sprint-02-story-10
-```
-But when you are creating a new bug fix for anything use:
-```shell
-# without issue related:  
-bug-fix/sprint-02-story-10  
-
-# with a issue #123 related:
-bug-fix/sprint-02-issue-123
-```
-
-** If is done without a story included use without the `-story-10`.
-
 ##### Pull Requests:
 
 *When my awesome job is...*
