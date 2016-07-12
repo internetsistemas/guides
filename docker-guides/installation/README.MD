@@ -16,7 +16,7 @@
 
 `sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D`
 
-- Open or create the file /etc/apt/sources.list.d/docker.list and delete any existing entries in it
+- Open or create the file __/etc/apt/sources.list.d/docker.list__ and delete any existing entries in it
 - Add an entry based on your System
   - Ubuntu 12.04
     `deb https://apt.dockerproject.org/repo ubuntu-precise main`
@@ -63,7 +63,9 @@
 - Creating a docker group
 
   `sudo groupadd docker`
+
   `sudo usermod -aG docker $USER`
+
   - Log out and log back in your shell session and verify your docker runs without sudo (reboot)
 
   `docker run hello-world`
@@ -76,10 +78,10 @@
 
 Example:
 
-  - curl -L https://github.com/docker/compose/releases/download/1.8.0-rc1/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+  - `curl -L https://github.com/docker/compose/releases/download/1.8.0-rc2/docker-compose-`uname -s`-`uname -m` > ~/docker-compose`
 
-  - sudo mv ~/docker-compose /usr/local/bin/docker-compose
+  - `sudo mv ~/docker-compose /usr/local/bin/docker-compose`
 
-  - chmod +x /usr/local/bin/docker-compose
+  - `chmod +x /usr/local/bin/docker-compose`
 
 [Installation Guides](https://docs.docker.com/compose/install/)
