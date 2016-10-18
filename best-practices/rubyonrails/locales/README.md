@@ -2,7 +2,7 @@
 
 * Use method `t` or `l` into views to call I18n of this page.
 * Don't use locales on models and services
-* Avoid using quotation marks or single quotes without
+* Avoid using quotation marks or without single quotes
 
 ## Files organization
 
