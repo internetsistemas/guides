@@ -12,5 +12,5 @@ When calling a service is good pattern show what we're calling. Things like `Pay
 
 * [Sandy Metz Rules](http://robots.thoughtbot.com/sandi-metz-rules-for-developers)
 * [Hound CI](https://houndci.com) is good to validate code style and other things.
-* Use ActiveRecord::Base.transaction to keep all process methods in transaction. Good pattern to rollback when a method fail and keep previous database status.
+* Use `ActiveRecord::Base.transaction` to keep all process methods in transaction. Good pattern to rollback when a method fail and keep previous database status.
 * [SOLID principles](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)
