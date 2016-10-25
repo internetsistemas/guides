@@ -56,7 +56,7 @@ Na continuação desse guides iremos utilizar na VM a SO Ubuntu Server, [instala
 ***Detalhe***: Devido a questão de permissão é necessário liberar acesso a pasta na VM para o uso no OSX, Rode “chmod -R 777”, por exemplo:
 
 ```
-chmod -R 777 /home/joao/repense_core
+chmod -R 777 /home/youruser/some_project
 ```
 
 como estamos usando uma VM com poucos recursos não há problema em usar o 777. 
