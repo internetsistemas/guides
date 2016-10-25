@@ -85,7 +85,7 @@ class SomeClass
 end
 ```
 
-* Indent `when` as deep as `case. Do the same for `if` and `else` as well.
+* Indent `when` as deep as `case`. Do the same for `if` and `else` as well.
 
 ```ruby
 case
@@ -246,7 +246,7 @@ people = Person.all
 
 ## Syntax
 
-* Always use && and || for boolean expressions. Do not use and and or to avoid precedence issues.
+* Always use `&&` and `||` for boolean expressions. Do not use `and` and `or` to avoid precedence issues.
 
 ```ruby
 if something && other
@@ -302,7 +302,7 @@ def filter(values)
 end
 ```
 
-* Avoid self when not required.
+* Avoid `self` when not required.
 
 ```ruby
 # Instead of this...

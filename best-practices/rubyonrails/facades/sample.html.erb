@@ -1,5 +1,5 @@
 <div>
-  <%= simple_for_for @new_product_facade.product do |f| %>
+  <%= simple_form_for @new_product_facade.product do |f| %>
     <%= f.input :name %>
     <%= f.input, collection: @new_product_facade.categories %>
     <%= f.submit %>

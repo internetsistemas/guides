@@ -23,7 +23,7 @@ One option to remove this problem, is using other bad pratice, putting query for
 ###### BAD
 
 ```
-simple_for_for @product do |f|
+simple_form_for @product do |f|
   f.input :name
   f.input :category, collection: Category.all
 ```
@@ -56,7 +56,7 @@ end
 And to use in the view:
 
 ```
-simple_for_for @new_product_facade.product do |f|
+simple_form_for @new_product_facade.product do |f|
   f.input :name
   f.input, collection: @new_product_facade.categories
 end
