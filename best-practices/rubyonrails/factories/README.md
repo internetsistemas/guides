@@ -17,7 +17,7 @@
   # When the attribute does not match the model name, you'll have to declare like this:
   
   factory :quotation_group do
-    association :current_executor, factory: collaborator
+    association :current_executor, factory: :collaborator
   end
   ```
 * Just declare `has_many` with it really needed to test, using `trait`.
