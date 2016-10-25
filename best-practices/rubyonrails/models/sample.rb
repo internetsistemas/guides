@@ -6,6 +6,8 @@ class Product < ActiveRecord::Base
 
   validates :supplier, presence: true, associated: true
   validates :quantity, presence: true
+  
+  has_enumeration_for :status, with: ProductStatus, required: true, create_helpers: true, create_scopes: true
 
   def self.canceled
     where(status: :canceled)
@@ -30,6 +32,8 @@ RSpec.describe Product, type: :model do
   context 'model validations' do
     it { is_expected.to validate_presence_of(:supplier) }
     it { is_expected.to validate_presence_of(:quantity) }
+    it { is_expected.to validate_presence_of(:status) }
+    it { is_expected.to validate_inclusion_of(:status).in_range(ProductStatus.list) }
   end
 
   context 'table fields' do
@@ -49,6 +53,16 @@ RSpec.describe Product, type: :model do
     it 'be invalid' do
       product = build :invalid_product
       expect(product).not_to be_valid
+    end
+  end
+  
+  context 'enumerations' do
+    ProductStatus.list.each do |enumeration|
+      let!(:product) { create :product, list: enumeration }
+      let!(:key) { ProductStatus.key_for(enumeration) }
+
+      it { expect(ProductStatus.send(key)).to eq([product]) }
+      it { expect(product).to respond_to("#{key}?") }
     end
   end
 
