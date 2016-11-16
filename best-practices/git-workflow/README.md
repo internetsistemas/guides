@@ -80,9 +80,15 @@ story-id
 
 \*¹ Add the *[ModuleName]* if your project works with this kind of organization.  
 \*² Ommit the name of thing that you will create, like Controller and Jobs, because it will be in declaration of PR.
+\*² 
 
 ##### Master Comment at Pull Request:
 
 The GitHub interface provides a master comment bellow the title of your pull request, there you can provide some explanations about your changes, but the most important thing is provide to code reviewer a way to do what you need to do, in other words, provide a link used by your project management added to it like:
 
 *Pull request related with:* [https://trello.com/c/bCd4/something](https://trello.com/c/bCd4/something)
+
+Related with: [#[STORY_ID]](http://dev.internetsistemas.com.br/development/stories/[STORY_ID])
+
+Merged with: #pull, #pull
+
