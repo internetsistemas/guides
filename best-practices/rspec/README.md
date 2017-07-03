@@ -35,9 +35,9 @@
 * Use a Fake to stub requests to external services.
 * Use integration tests to execute the entire app.
 * Use non-SUT methods in expectations when possible.
-* Prefer a plain object with only the required fields filled instead a `factory` when possible.
-* Use `build` instead of `create` when you don't need the `object` to be persisted.
-* Don't overuse `it` when dont needed, instead group your tests with same focus under one `it`.
-* Avoid `!` on `let!` when you don't need it.
-* Define objects inside the scope they will be used. Only define then in the begining if they will be used in ALL exemples.
+* Prefer a plain object with only the required fields filled instead a `factory` when possible. (If your tests need only one field, you dont need to build a hole object.)
+* Use `FactoryGirl` `build` instead of `create` when you don't need the `object` to be persisted. (`build` will not persiste the object, while `create` will.)
+* Don't overuse `it` when dont needed, instead group your tests with same focus under one `it`. (Remember each `it` will call all scoped `let` and `before` blocks.)
+* Avoid `!` on `let!` when you don't need it. (Lazy `let` will be invoked only when called, `let!` will be called before each example.) 
+* Define objects inside the scope they will be used. Only define then in the begining if they will be used in ALL exemples. 
 * If the tests are getting too complex, maybe the code need some refactor.
