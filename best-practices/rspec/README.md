@@ -30,9 +30,14 @@
 * Test background jobs with a `Delayed::Job` matcher.
 * Use stubs and spies (not mocks) in isolated tests.
 * Use a single level of abstraction within scenarios.
-* Use an it example or test method for each execution path through the method.
 * Use assertions about state for incoming messages.
 * Use stubs and spies to assert you sent outgoing messages.
 * Use a Fake to stub requests to external services.
 * Use integration tests to execute the entire app.
 * Use non-SUT methods in expectations when possible.
+* Prefer a plain object with only the required fields filled instead a `factory` when possible.
+* Use `build` instead of `create` when you don't need the `object` to be persisted.
+* Don't overuse `it` when dont needed, instead group your tests with same focus under one `it`.
+* Avoid `!` on `let!` when you don't need it.
+* Define objects inside the scope they will be used. Only define then in the begining if they will be used in ALL exemples.
+* If the tests are getting too complex, maybe the code need some refactor.

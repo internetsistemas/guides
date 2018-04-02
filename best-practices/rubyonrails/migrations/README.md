@@ -5,7 +5,7 @@
 * Use good name to migrations and follow the [Ruby on Rails Guide](http://guides.rubyonrails.org/active_record_migrations.html).
 * Use `rails generate model` to create table.
 * Use migrations for update database values (access data). Good pattern is create a rake if the migration will be used more than one time.
-* To default add index on relationships, use 
+* By default use `add_index` on relationships.
 
 ## Coding Style and Conventions
 

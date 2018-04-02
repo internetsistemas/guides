@@ -22,7 +22,7 @@ $ git checkout master
 $ git pull origin master 
 
 // now, enter in your branch
-$ git checkout -b feature/awesome
+$ git checkout -b story-idx
 // happy coding!
 ```
 
@@ -34,11 +34,11 @@ In other words, when you need some classes for eg. But it be in other branches y
 // update your branches.
 $ git fetch origin
 // create your branch normally.
-$ git checkout -b feature/awesome
+$ git checkout -b story-new-id
 // now you need to reference old branch inside your new branch.
-$ git fetch origin feature/old-awesome-feature:feature/old-awesome-feature
+$ git fetch origin story-id:story-id
 // and merge with your new branch.
-$ git merge old-awesome-feature
+$ git merge story-id
 ```
 
 #### What will happen?
@@ -61,38 +61,33 @@ Generally we use micro commits as the default kind.
 
 ##### Branches:
 
-When you will develop a new feature use:
+When you will develop a new feature or issue use:
 
+```console
+// The `id` will be the id placed in the url!
+story-id
 ```
-feature/sprint-02-story-10
-```
-But when you are creating a new bug fix for anything use:
-```shell
-# without issue related:  
-bug-fix/sprint-02-story-10  
-
-# with a issue #123 related:
-bug-fix/sprint-02-issue-123
-```
-
-** If is done without a story included use without the `-story-10`.
-
 ##### Pull Requests:
 
 *When my awesome job is...*
 
 - *create a new model called `PaymentForm`* will turn **Feature/Model: Sprint 02 - Story 10 / PaymentForm**
-- *create a new controller and views for `Place` model* will turn **Feature/Controller: Sprint 02 - Story 10 / Places** *²
-- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / CheckSomething** *²
-- *create a new service called `SupplierService`* will turn **Feature/Service: Sprint 02 - Story 10 / Supplier** *²
-- *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10 [Module Name]** *¹
+- *create a new controller and views for `Place` model* will turn **Feature/Controller: Sprint 02 - Story 10 / [Module Name] Places** *²
+- *create a new job called `CheckSomethingJob`* will turn **Feature/Job: Sprint 02 - Story 10 / [Module Name] CheckSomething** *²
+- *create a new service called `SupplierService`* will turn **Feature/Service: Sprint 02 - Story 10 / [Module Name] Supplier** *²
+- *fix a bug called Issue #1234* will turn **Bug Fix/Issue #1234: Sprint 02 - Story 10 / [Module Name]** *¹
 - *fix a bug called remove rubocop offences* will turn **Bug Fix/Code Refactor: Sprint 02 - Story 10 / Rubocop offences** (try to compress the name!)
 
 \*¹ Add the *[ModuleName]* if your project works with this kind of organization.  
 \*² Ommit the name of thing that you will create, like Controller and Jobs, because it will be in declaration of PR.
+\*² 
 
 ##### Master Comment at Pull Request:
 
 The GitHub interface provides a master comment bellow the title of your pull request, there you can provide some explanations about your changes, but the most important thing is provide to code reviewer a way to do what you need to do, in other words, provide a link used by your project management added to it like:
 
-*Pull request related with:* [https://trello.com/c/bCd4/something](https://trello.com/c/bCd4/something)
+```
+Related with: [#STORY_ID](STORY_URL)
+
+Merged with: #pull, #pull
+```

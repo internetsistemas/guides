@@ -22,8 +22,4 @@ class ChangeNameTypeInProducts < ActiveRecord::Migration
   def up
     change_column :products, :name, :text
   end
-
-  def down
-    change_column :products, :name, :string
-  end
 end
