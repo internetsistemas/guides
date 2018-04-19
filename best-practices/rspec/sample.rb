@@ -57,3 +57,42 @@ describe SomeClass do
     end
   end
 end
+
+describe SomeClass do
+  #BAD - Not used in all examples
+  #BAD - ! Not needed
+  let!(:project) { create :project, hours: 10}
+  let!(:project_two) { create :project, hours: 20 }
+  let!(:project_three) { create :project, hours: 30 }
+  let!(:projects) { [project, project_two, project_three] }
+  
+  #Good - Used in all examples
+  subject { described_class.new }
+	
+  context "when not database related" do
+	
+	subject.sum(projects, 10)
+	
+	#BAD - Unecessary its
+	it { expect(project.hours).to eq 20 }
+    it { expect(project_two.hours).to eq 20 }
+    it { expect(project_three.hours).to eq 30 }
+  end
+
+  context "when objects only used inside example" do
+	#Good - 'let' only within the scope they are used 
+	let(:other_project) { Project.new hours: 10 }
+	let(:other_project_two) { Project.new hours: 20 }
+	let(:other_project_three) { Project.new hours: 20 }
+	let(:other_projects) { [another_project, other_project_two, other_project_three] }
+	
+	#GOOD - Group your tests with same focus in one it
+	it "sums negative" do
+      subject.sum(other_projects, -5)
+	  
+	  expect(other_project.hours).to eq 5
+	  expect(other_project_two.hours).to eq 15
+	  expect(other_project_three.hours).to eq 15
+    end
+  end
+end
